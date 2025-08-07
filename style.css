@@ -7,7 +7,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* always two columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
@@ -15,13 +15,25 @@ body {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-size: cover;
-  background-position: center;
+  background-color: transparent;
   border: none;
   border-radius: 10px;
   overflow: hidden;
-  font-size: 24px;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-button::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--bg-image);
+  border-radius: 8px;
 }
 
 .counter {
@@ -32,6 +44,7 @@ body {
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 20px;
+  color: white;
 }
 
 .reset-button {

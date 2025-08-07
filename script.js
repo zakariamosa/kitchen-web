@@ -26,7 +26,7 @@ function renderButtons() {
   buttonData.forEach((btn, index) => {
     const wrapper = document.createElement("div");
     wrapper.className = "food-button";
-    wrapper.style.backgroundImage = `url(images/${btn.image})`;
+    wrapper.style.setProperty('--bg-image', `url(images/${btn.image})`);
     wrapper.onclick = () => {
       btn.counter++;
       renderButtons();
