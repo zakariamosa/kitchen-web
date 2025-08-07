@@ -14,6 +14,7 @@ body {
 .food-button {
   position: relative;
   width: 100%;
+  height: 60px;
   aspect-ratio: 1 / 1;
   background-color: transparent;
   border: none;
@@ -49,6 +50,7 @@ body {
 
 .reset-button {
   width: 100%;
+  height: 60px;
   aspect-ratio: 1 / 1;
   background: none;
   border: none;
